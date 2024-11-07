@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Basics*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+/*Header styling*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #002626;
+}
+
+.logo {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/*Main section*/
+
+main {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* Weekly book content */
+
+.weekly-book {
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+
+.book-content {
+    display: flex;
+    gap: 15px;
+}
+
+/*Placeholder styling for image*/
+
+.book-image {
+    width: 80px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.book-details h3 {
+    font-size: 20px;
+    color: #214268;
+    margin-bottom: 5px;
+}
+
+.book-author {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.book-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    .book-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-image {
+        margin-bottom: 10px;
+    }
+
+    .book-details h3 {
+        font-size: 18px;
+    }
+
+    .book-author, .book-details p {
+        font-size: 14px;
+    }
+}
