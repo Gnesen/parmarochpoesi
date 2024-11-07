@@ -1,0 +1,185 @@
+* {
+    margin:0px;
+    padding:0;
+}
+
+header {
+    background-color: #002626;
+    height:60px;
+    display:flex;
+    padding:20px;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined {
+    color: #FCFBF4;
+}
+
+h1, h2, h3 {
+    font-family: 'Antic Didone';
+    color: #002626;
+}
+
+p {
+    font-family: 'Gabarito';
+}
+
+body {
+    background-color: #FCFBF4;
+}
+
+.hero {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 300;
+
+}
+
+.evenemang-btn {
+    width:100%;
+    background-color: #C62E65;
+    border-radius:10px;
+    height:15vh;
+    display:flex;
+    align-items: flex-end;
+    margin-top:25px;
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    -moz-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    cursor: pointer;
+}
+
+.evenemang-btn:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    transition:0.5s;
+}
+
+.evenemang-btn h3 {
+    color: #FCFBF4;
+    padding-left:15px;
+    padding-bottom:15px;
+    font-size: 25px;
+}
+
+.boktips-btn {
+    background-color: #F9B3D1;
+    width:100%;
+    margin-top:25px;
+    border-radius: 10px;
+    height:15vh;
+    display:flex;
+    align-items: flex-end;
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    -moz-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    cursor: pointer;
+}
+
+.boktips-btn:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    transition:0.5s;
+}
+
+.boktips-btn h3 {
+    color: #002626;
+    padding-left:15px;
+    padding-bottom:15px;
+    font-size: 25px;
+}
+
+.event-sect {
+    margin-top:50px;
+    padding:20px;
+}
+
+h2 {
+    font-size: 65px;
+    font-weight: 100;
+    line-height: 60px;
+}
+
+.event-sect img {
+    width:100%;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.underrubrik {
+    font-weight: 600;
+    font-size:25px;
+    margin-top:15px;
+}
+
+.brodtext {
+    margin-top:15px;
+    font-weight:100;
+    font-size:16px;
+}
+
+.avskiljare {
+    width:100%;
+    overflow:hidden;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.bok-sect {
+    padding:20px;
+}
+
+.bok-sect img{
+    width:100%;
+    border-radius: 10px;
+    margin-top:20px;
+}
+
+.forfattare {
+    font-weight:100;
+    font-size:25px;
+}
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    background-color: #002626;
+    padding:25px;
+    color:#FCFBF4;
+    margin:0;
+}
+
+
+footer img {
+    width:70px;
+}
+
+footer p {
+    line-height: 32px;
+}
+
+.kontakt {
+    background-color:#F9B3D1;
+}
+
+@media screen and (min-width:768px) {
+    .bignav {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .evenemang-btn {
+        width:45%;
+    }
+
+    .boktips-btn {
+        width:45%;
+    }
+
+    
+}
