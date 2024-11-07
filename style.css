@@ -1,4 +1,173 @@
 
+body{
+    background-color: #FDF0D5;
+}
+
+h1{
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.kalender {
+    width: 280px; 
+    padding: 0;
+    margin: 0 auto; 
+}
+
+
+.kalender ul{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 0; 
+    padding: 0;
+    margin: 0;
+
+}
+
+.kalender li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style:none;
+    font-size: 1em;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border: 1px #AAAAAA solid;
+    box-sizing: border-box;
+    margin: 0; 
+
+}
+
+.old-date{
+    color: #bebbbb;
+}
+
+
+.rund-cirkel{
+    display: inline-block;
+    width: 30px;      
+    height: 30px;     
+    border: 2px solid #0056b3; 
+    border-radius: 50%; 
+    text-align: center; 
+    line-height: 30px;
+}
+
+
+
+
+/* Base styles (Mobile-first) */
+body {
+    background-color: #FDF0D5;
+}
+
+h1 {
+    font-family: "Antic Didone", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+}
+
+.kalender {
+    width: 280px; 
+    padding: 0;
+    margin: 0 auto;
+}
+
+.kalender ul {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.kalender li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: 1em;
+    height: 40px;
+    width: 40px;
+    background-color: #fff;
+    border: 1px #AAAAAA solid;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.old-date {
+    color: #bebbbb;
+}
+
+.rund-cirkel {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid #0056b3;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+
+
+/* Desktop */
+@media (min-width: 768px) {
+    h1{
+         font-size: 60px;
+         margin-right: 30%;
+         margin-top: 30%;
+    }
+    
+    aside{
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .kalender{
+        margin-top: 10%;
+    }
+
+
+    .kalender li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style:none;
+        font-size: 1.5em;
+        height: 60px;
+        width: 60px;
+        background-color: #fff;
+        border: 1px #AAAAAA solid;
+        box-sizing: border-box;
+        margin: 0; 
+    
+    }
+    
+    .old-date{
+        color: #bebbbb;
+    }
+    
+    
+    .rund-cirkel{
+        display: inline-block;
+        width: 40px;      
+        height: 40px;     
+        border: 2px solid #0056b3; 
+        border-radius: 50%; 
+        text-align: center; 
+        line-height: 40px;
+    }
+}
+=======
+
 * {
     margin:0px;
     padding:0;
@@ -377,4 +546,3 @@ form button {
 form button:hover {
     background-color: #9d2551;
 }
-
