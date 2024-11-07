@@ -59,7 +59,7 @@ h1{
 
 
 
-/* Base styles (Mobile-first) */
+/* kalender - Mobile */
 body {
     background-color: #FDF0D5;
 }
@@ -117,7 +117,7 @@ h1 {
 
 
 
-/* Desktop */
+/* kalender - Desktop */
 @media (min-width: 768px) {
     h1{
          font-size: 60px;
