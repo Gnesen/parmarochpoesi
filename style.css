@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Gabarito" ;
+    src: url(Gabarito-Regular.ttf);
+}
+@font-face {
+    font-family: "AnticDidone" ;
+    src: url(AnticDidone-Regular.ttf);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    font-family: "AnticDidone" ;
+}
+
+/* Main container with background color */
+.contact-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    
+}
+
+/* Form box with background color */
+.form-box {
+    background-color: #F9B3D1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Gabarito";
+}
+
+/* Styling for form fields */
+form label {
+    font-weight: regular;
+    margin-top: 10px;
+    display: block;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #C62E65;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
