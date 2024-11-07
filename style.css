@@ -1,3 +1,4 @@
+
 body{
     background-color: #FDF0D5;
 }
@@ -164,4 +165,384 @@ h1 {
         text-align: center; 
         line-height: 40px;
     }
+}
+=======
+
+* {
+    margin:0px;
+    padding:0;
+}
+
+header {
+    background-color: #002626;
+    height:60px;
+    display:flex;
+    padding:20px;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined {
+    color: #FCFBF4;
+}
+
+h1, h2, h3 {
+    font-family: 'Antic Didone';
+    color: #002626;
+}
+
+p {
+    font-family: 'Gabarito';
+}
+
+body {
+    background-color: #FCFBF4;
+}
+
+.hero {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 300;
+
+}
+
+.evenemang-btn {
+    width:100%;
+    background-color: #C62E65;
+    border-radius:10px;
+    height:15vh;
+    display:flex;
+    align-items: flex-end;
+    margin-top:25px;
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    -moz-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    cursor: pointer;
+}
+
+.evenemang-btn:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    transition:0.5s;
+}
+
+.evenemang-btn h3 {
+    color: #FCFBF4;
+    padding-left:15px;
+    padding-bottom:15px;
+    font-size: 25px;
+}
+
+.boktips-btn {
+    background-color: #F9B3D1;
+    width:100%;
+    margin-top:25px;
+    border-radius: 10px;
+    height:15vh;
+    display:flex;
+    align-items: flex-end;
+    -webkit-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    -moz-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
+    cursor: pointer;
+}
+
+.boktips-btn:hover {
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
+    transition:0.5s;
+}
+
+.boktips-btn h3 {
+    color: #002626;
+    padding-left:15px;
+    padding-bottom:15px;
+    font-size: 25px;
+}
+
+.event-sect {
+    margin-top:50px;
+    padding:20px;
+}
+
+h2 {
+    font-size: 65px;
+    font-weight: 100;
+    line-height: 60px;
+}
+
+.event-sect img {
+    width:100%;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.underrubrik {
+    font-weight: 600;
+    font-size:25px;
+    margin-top:15px;
+}
+
+.brodtext {
+    margin-top:15px;
+    font-weight:100;
+    font-size:16px;
+}
+
+.avskiljare {
+    width:100%;
+    overflow:hidden;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.bok-sect {
+    padding:20px;
+}
+
+.bok-sect img{
+    width:100%;
+    border-radius: 10px;
+    margin-top:20px;
+}
+
+.forfattare {
+    font-weight:100;
+    font-size:25px;
+}
+
+footer {
+    display:flex;
+    justify-content: space-between;
+    background-color: #002626;
+    padding:25px;
+    color:#FCFBF4;
+    margin:0;
+}
+
+
+footer img {
+    width:70px;
+}
+
+footer p {
+    line-height: 32px;
+}
+
+.kontakt {
+    background-color:#F9B3D1;
+}
+
+@media screen and (min-width:768px) {
+    .bignav {
+        display:flex;
+        justify-content: space-between;
+    }
+
+    .evenemang-btn {
+        width:45%;
+    }
+
+    .boktips-btn {
+        width:45%;
+    }
+
+    
+=======
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Basics*/
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    padding: 10px;
+}
+
+/*Header styling*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #002626;
+}
+
+.logo {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu-icon {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+/*Main section*/
+
+main {
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+/* Weekly book content */
+
+.weekly-book {
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    padding: 20px;
+
+}
+
+.book-content {
+    display: flex;
+    gap: 15px;
+}
+
+/*Placeholder styling for image*/
+
+.book-image {
+    width: 80px;
+    height: 100px;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.book-details h3 {
+    font-size: 20px;
+    color: #214268;
+    margin-bottom: 5px;
+}
+
+.book-author {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.book-details p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    .book-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-image {
+        margin-bottom: 10px;
+    }
+
+    .book-details h3 {
+        font-size: 18px;
+    }
+
+    .book-author, .book-details p {
+        font-size: 14px;
+    }
+}
+=======
+@font-face {
+    font-family: "Gabarito" ;
+    src: url(Gabarito-Regular.ttf);
+}
+@font-face {
+    font-family: "AnticDidone" ;
+    src: url(AnticDidone-Regular.ttf);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    font-family: "AnticDidone" ;
+}
+
+
+.contact-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    
+}
+
+
+.form-box {
+    background-color: #F9B3D1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: "Gabarito";
+}
+.form-box h1 {
+    font-family: "AnticDidone";  
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+form label {
+    font-weight: regular;
+    margin-top: 10px;
+    display: block;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #C62E65;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #9d2551;
 }
