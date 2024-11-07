@@ -18,7 +18,7 @@ body {
     font-family: "AnticDidone" ;
 }
 
-/* Main container with background color */
+
 .contact-container {
     width: 90%;
     max-width: 400px;
@@ -26,7 +26,7 @@ body {
     
 }
 
-/* Form box with background color */
+
 .form-box {
     background-color: #F9B3D1;
     padding: 20px;
@@ -34,8 +34,14 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: "Gabarito";
 }
+.form-box h1 {
+    font-family: "AnticDidone";  
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
 
-/* Styling for form fields */
 form label {
     font-weight: regular;
     margin-top: 10px;
@@ -61,5 +67,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #45a049;
+    background-color: #9d2551;
 }
