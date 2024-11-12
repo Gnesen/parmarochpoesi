@@ -1,81 +1,51 @@
-
-body{
-    background-color: #FDF0D5;
-}
-
-.h1-kalender{
-    font-family: "Antic Didone", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-}
-
-.kalender {
-    width: 280px; 
-    padding: 0;
-    margin: 0 auto; 
-}
-
-
-.kalender ul{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    gap: 0; 
-    padding: 0;
+/* Grundläggande Reset */
+* {
     margin: 0;
-
-}
-
-.kalender li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style:none;
-    font-size: 1em;
-    height: 40px;
-    width: 40px;
-    background-color: #fff;
-    border: 1px #AAAAAA solid;
+    padding: 0;
     box-sizing: border-box;
-    margin: 0; 
-
 }
 
-.old-date{
-    color: #bebbbb;
-}
-
-
-.rund-cirkel{
-    display: inline-block;
-    width: 30px;      
-    height: 30px;     
-    border: 2px solid #0056b3; 
-    border-radius: 50%; 
-    text-align: center; 
-    line-height: 30px;
-}
-
-
-
-
-/* kalender - Mobile */
 body {
     background-color: #FDF0D5;
-}
-
-.h1-kalender {
     font-family: "Antic Didone", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 50px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
+h1, h2, h3 {
+    font-family: 'Antic Didone', serif;
+    color: #002626;
+}
+
+h2 {
+    font-size:50px;
+    font-weight: 100;
+}
+
+p {
+    font-family: 'Gabarito';
+}
+
+.btn-boktips {
+    background-color:#F9B3D1;
+    font-family: 'Gabarito';
+    padding:25px 50px;
+    color: #002626;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.btn-boktips:hover {
+    background-color: #9d2551;
+    color:#FCFBF4
+}
+
+/* Kalender */
 .kalender {
     width: 280px; 
     padding: 0;
-    margin: 0 auto;
+    margin-bottom:150px;
 }
 
 .kalender ul {
@@ -94,9 +64,8 @@ body {
     font-size: 1em;
     height: 40px;
     width: 40px;
-    background-color: #fff;
-    border: 1px #AAAAAA solid;
-    box-sizing: border-box;
+    background-color: #FCFBF4;
+    border: 1px solid #AAAAAA;
     margin: 0;
 }
 
@@ -114,90 +83,69 @@ body {
     line-height: 30px;
 }
 
-
-
-
-/* kalender - Desktop */
+/* Anpassningar för Desktop */
 @media (min-width: 768px) {
-    .h1-kalender{
-         font-size: 60px;
-         margin-right: 30%;
-         margin-top: 30%;
-    }
-    
-    aside{
-        display: flex;
-        justify-content: center;
-
+    .h1-kalender {
+        font-size: 60px;
+        margin-right: 30%;
+        margin-top: 30%;
     }
 
-    .kalender{
-        margin-top: 10%;
+    .kalender {
+        margin-top: 50px;
+        display:flex;
     }
 
-
-    .kalender li{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style:none;
+    .kalender li {
         font-size: 1.5em;
         height: 60px;
         width: 60px;
-        background-color: #fff;
-        border: 1px #AAAAAA solid;
-        box-sizing: border-box;
-        margin: 0; 
-    
     }
-    
-    .old-date{
-        color: #bebbbb;
-    }
-    
-    
-    .rund-cirkel{
-        display: inline-block;
-        width: 40px;      
-        height: 40px;     
-        border: 2px solid #0056b3; 
-        border-radius: 50%; 
-        text-align: center; 
+
+    .rund-cirkel {
+        width: 40px;
+        height: 40px;
         line-height: 40px;
     }
 }
-=======
 
-* {
-    margin:0px;
-    padding:0;
-}
-
+/* Header */
 header {
     background-color: #002626;
-    height:60px;
-    display:flex;
-    padding:20px;
+    height: 60px;
+    display: flex;
+    padding: 20px;
     justify-content: space-between;
+}
+
+.header-menu {
+    color:#FCFBF4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu a {
+    margin-right: 20px;
+    color:#FCFBF4;
+    font-family: 'Gabarito';
+    text-decoration: none;
 }
 
 .material-symbols-outlined {
     color: #FCFBF4;
 }
 
-h1, h2, h3 {
-    font-family: 'Antic Didone';
-    color: #002626;
+.logo {
+    font-weight: bold;
+    color: #ffffff;
 }
 
-p {
-    font-family: 'Gabarito';
+.menu-icon {
+    font-size: 24px;
+    color: #ffffff;
 }
 
-body {
-    background-color: #FCFBF4;
-}
-
+/* Hero Section */
 .hero {
     padding: 20px;
 }
@@ -205,128 +153,99 @@ body {
 h1 {
     font-size: 75px;
     font-weight: 300;
+}
 
+/* Evenemang & Boktips Knapp */
+.evenemang-btn,
+.boktips-btn {
+    width: 100%;
+    border-radius: 10px;
+    height: 15vh;  
+    display: flex;
+    align-items: flex-end;
+    margin-top: 25px;
+    box-shadow: 0px 8px 0px 0px rgba(0, 38, 38, 1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.boktips-btn-text {
+    text-decoration: none;
+    color:#002626;
+}
+
+.evenemang-btn-text {
+    text-decoration: none;
+    color:#FCFBF4;
 }
 
 .evenemang-btn {
-    width:100%;
     background-color: #C62E65;
-    border-radius:10px;
-    height:15vh;
-    display:flex;
-    align-items: flex-end;
-    margin-top:25px;
-    -webkit-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
-    -moz-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
-    box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
-    cursor: pointer;
-}
-
-.evenemang-btn:hover {
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
-    -moz-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
-    box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
-    transition:0.5s;
-}
-
-.evenemang-btn h3 {
-    color: #FCFBF4;
-    padding-left:15px;
-    padding-bottom:15px;
-    font-size: 25px;
 }
 
 .boktips-btn {
     background-color: #F9B3D1;
-    width:100%;
-    margin-top:25px;
-    border-radius: 10px;
-    height:15vh;
-    display:flex;
-    align-items: flex-end;
-    -webkit-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
-    -moz-box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
-    box-shadow: 0px 8px 0px 0px rgba(0,38,38,1);
-    cursor: pointer;
 }
 
-.boktips-btn:hover {
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
-    -moz-box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
-    box-shadow: 0px 0px 0px 0px rgba(0,38,38,1);
-    transition:0.5s;
+.evenemang-btn h3,
+.boktips-btn h3 {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+.evenemang-btn h3 {
+    color: #FCFBF4;
 }
 
 .boktips-btn h3 {
     color: #002626;
-    padding-left:15px;
-    padding-bottom:15px;
-    font-size: 25px;
 }
 
-.event-sect {
-    margin-top:50px;
-    padding:20px;
+/* Sektioner */
+.event-sect, .bok-sect {
+    padding: 20px;
+    margin-top: 50px;
 }
 
-h2 {
-    font-size: 65px;
-    font-weight: 100;
-    line-height: 60px;
+.event-sect img,
+.bok-sect img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
 }
 
-.event-sect img {
-    width:100%;
-    border-radius:10px;
-    margin-top:20px;
-}
-
+/* Undertexter */
 .underrubrik {
     font-weight: 600;
-    font-size:25px;
-    margin-top:15px;
+    font-size: 25px;
+    margin-top: 15px;
 }
 
 .brodtext {
-    margin-top:15px;
-    font-weight:100;
-    font-size:16px;
+    margin-top: 15px;
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom:50px
 }
 
 .avskiljare {
-    width:100%;
-    overflow:hidden;
-    margin-top:50px;
-    margin-bottom:50px;
+    width: 100%;
+    overflow: hidden;
+    margin: 50px 0;
 }
 
-.bok-sect {
-    padding:20px;
-}
-
-.bok-sect img{
-    width:100%;
-    border-radius: 10px;
-    margin-top:20px;
-}
-
-.forfattare {
-    font-weight:100;
-    font-size:25px;
-}
-
+/* Footer */
 footer {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     background-color: #002626;
-    padding:25px;
-    color:#FCFBF4;
-    margin:0;
+    padding: 25px;
+    color: #FCFBF4;
 }
 
-
 footer img {
-    width:70px;
+    width: 70px;
 }
 
 footer p {
@@ -334,8 +253,74 @@ footer p {
 }
 
 .kontakt {
-    background-color:#F9B3D1;
+    background-color: #F9B3D1;
 }
+
+/* Formulär */
+.contact-container {
+    padding: 20px;
+}
+
+.form-box {
+    background-color: #F9B3D1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input,
+form textarea,
+form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #C62E65;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+form button:hover {
+    background-color: #9d2551;
+}
+
+/* Mobile Anpassningar */
+@media (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    .book-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-image {
+        margin-bottom: 10px;
+    }
+}
+
+/*Desktop anpassningar */
 
 @media screen and (min-width:768px) {
     .bignav {
@@ -351,198 +336,27 @@ footer p {
         width:45%;
     }
 
-    
-=======
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*Basics*/
-
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #fafafa;
-    padding: 10px;
-}
-
-/*Header styling*/
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    font-size: 18px;
-    background-color: #002626;
-}
-
-.logo {
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.menu-icon {
-    font-size: 24px;
-    color: #ffffff;
-}
-
-/*Main section*/
-
-main {
-    margin-top: 20px;
-}
-
-h1 {
-    font-size: 28px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 15px;
-    text-align: center;
-    padding-bottom: 5px;
-}
-
-/* Weekly book content */
-
-.weekly-book {
-    background-color: #fdfdfd;
-    border-radius: 8px;
-    padding: 20px;
-
-}
-
-.book-content {
-    display: flex;
-    gap: 15px;
-}
-
-/*Placeholder styling for image*/
-
-.book-image {
-    width: 80px;
-    height: 100px;
-    background-color: #ddd;
-    border-radius: 4px;
-}
-
-.book-details h3 {
-    font-size: 20px;
-    color: #214268;
-    margin-bottom: 5px;
-}
-
-.book-author {
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 8px;
-}
-
-.book-details p {
-    font-size: 14px;
-    color: #666;
-}
-
-/* Mobile adjustments */
-@media (max-width: 600px) {
-    body {
-        padding: 5px;
+    .event-sect {
+        display:flex;
+        justify-content: space-between;
     }
 
-    .book-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+
+    .bok-sect {
+        display:flex;
+        justify-content: space-between;
     }
 
-    .book-image {
-        margin-bottom: 10px;
+    .event-text {
+        width:100%;
+        margin-right:20px;
     }
 
-    .book-details h3 {
-        font-size: 18px;
+    .event-sect img {
+        width:100%;
     }
 
-    .book-author, .book-details p {
-        font-size: 14px;
+    .bok-sect img {
+        width:100%
     }
-}
-=======
-@font-face {
-    font-family: "Gabarito" ;
-    src: url(Gabarito-Regular.ttf);
-}
-@font-face {
-    font-family: "AnticDidone" ;
-    src: url(AnticDidone-Regular.ttf);
-}
-
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f4f4f9;
-    font-family: "AnticDidone" ;
-}
-
-
-.contact-container {
-    width: 90%;
-    max-width: 400px;
-    padding: 20px;
-    
-}
-
-
-.form-box {
-    background-color: #F9B3D1;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-family: "Gabarito";
-}
-.form-box h1 {
-    font-family: "AnticDidone";  
-    font-size: 30px;
-    text-align: center;
-    color: #333;
-    margin-bottom: 30px;
-}
-
-form label {
-    font-weight: regular;
-    margin-top: 10px;
-    display: block;
-}
-
-form input, form textarea, form button {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-
-form button {
-    background-color: #C62E65;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 15px;
-}
-
-form button:hover {
-    background-color: #9d2551;
 }
