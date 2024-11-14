@@ -139,6 +139,7 @@ p {
     }
 
     .book-content {
+        display:flex;
         flex-direction: row;
         text-align: left;
     }
@@ -233,14 +234,6 @@ h1 {
     padding: 20px;
 }
 
-.book-content {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
 .book-content img {
     width:100%;
     border-radius: 10px;
@@ -257,6 +250,11 @@ h1 {
     font-family: 'Gabarito', sans-serif;
     font-size: 14pt;
     color: #666;
+}
+
+book-details {
+    display:flex;
+    flex-direction: column;
 }
 
 .divider {
@@ -477,5 +475,26 @@ form button:hover {
 
     .kalender {
         display:block;
+    }
+
+    .weekly-book {
+        display:flex;
+        flex-direction: column;
+    }
+
+    .book-content {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        text-align: left;
+    }
+
+    .weekly-book h3 {
+        font-size: 35px;
+        margin-bottom:15px;
+    }
+
+    .weekly-book img {
+        border-radius:10px;
     }
 }
