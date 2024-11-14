@@ -26,18 +26,18 @@ Description: This HTML file creates a webpage section displaying book recommenda
         </div>
     </header>
     <main>
-        <section class="container">
+        <div class="container">
             <h1>Boktips</h1>
     
     <!--The section for weekly book tips-->
-            <section class="weekly-book">
+            <div class="weekly-book">
                 <h2>Veckans bok</h2>
     
-                <article class="book-content">
+                <section class="book-content">
                         <img src="images/pythian.avif" alt="">
-    
-                    <section class="book-details">
-                        <h3>Pythian pratar</h3>
+
+                    <h3>Pythian pratar</h3>    
+                    <article class="book-details">
                         <p class="book-author">Liv Strömquist</p>
                         <p>Liv Strömquists tionde seriealbum är en självhjälpsbok mot självhjälp.
                             <br>
@@ -48,22 +48,22 @@ Description: This HTML file creates a webpage section displaying book recommenda
                             fysiskt möjligt.
                         </p>
                     </section>
-                </article>
-            </section>
+                </section>
+            </div>
     
             <!--Pink divider-->
-            <section class="divider"><img src="images/bord.svg" alt=""></section>
+            <div class="divider"><img src="images/bord.svg" alt=""></div>
     
     <!--The section for the employee favorites-->
-            <section class="weekly-book">
+            <div class="empl-favorites">
                 <h2>Personalens favoriter</h2>
     
                 <!--Book 1-->
-                <article class="book-content">
+                <section class="book-content">
                         <img src="Images/flowersforalgernon.jpg" alt="">
     
-                    <section class="book-details">
                         <h3>Flowers for Algernon</h3>
+                    <article class="book-details">
                         <p class="book-author">Daniel Keyes</p>
                         <p><em>Flowers For Algernon räknas som en klassiker inom Science Fiction-genren, 
                             men är nog långt ifrån den typ av bok många då sannolikt associerar till. 
@@ -78,20 +78,20 @@ Description: This HTML file creates a webpage section displaying book recommenda
                             höja intelligensnivån på möss och forskarna känner sig nu redo för 
                             sitt första mänskliga testobjekt; Charlie.
                         </p>
-                    </section>
-                </article>
+                    </article>
+                </section>
     
                 <!--Discrete divider that separates the different book tips from employees-->
                 <hr class="small-divider">
     
                 <!--Book 2-->
-                <article class="book-content">
+                <section class="book-content">
                     <img src="Images/sniglarochsno.webp" alt="">
     
-                <section class="book-details">
                     <h3>Sniglar och Snö</h3>
-                    <p class="book-author">Agneta Pleijel</p>
-                    <p><em>Sniglar och snö är en bok för alla som vill läsa en fantastisk och självreflekterande 
+                    <article class="book-details">
+                        <p class="book-author">Agneta Pleijel</p>
+                        <p><em>Sniglar och snö är en bok för alla som vill läsa en fantastisk och självreflekterande 
                         berättelse om livet, sinnets förmåga att utvecklas och inte minst, den stora kärleken. </em>
                         <br>
                         <br>
@@ -102,10 +102,10 @@ Description: This HTML file creates a webpage section displaying book recommenda
                         pågår i handlingen på ett utforskande sätt. Från hur det kändes att vara Sveriges
                         första kvinnliga kulturchef på en dagstidning till att möta den stora kärleken
                         i en omöjlig tid i livet. 
-                    </p>
+                        </p>
+                    </article>
                 </section>
-            </article>
-            </section>
+            </div>
     
             <!--Pink divider-->
             <section class="divider"><img src="images/bord.svg" alt=""></section>
@@ -118,18 +118,17 @@ Description: This HTML file creates a webpage section displaying book recommenda
                 <br>
                 – George R.R. Martin</em></p>
             </section>
-        </section>
+        </div>
     </main>
+    <footer>
+        <section>
+            <img src="images/parmarochpoesi-logo.svg" alt="">
+        </section>
+        <section class="footer-menu">
+            <p>Hem</p>
+            <p>Evenemang</p>
+            <p>Boktips</p>
+            <p>Hitta hit</p>
+        </section>
+    </footer>
 </body>
-
-<footer>
-    <section>
-        <img src="images/parmarochpoesi-logo.svg" alt="">
-    </section>
-    <section class="footer-menu">
-        <p>Hem</p>
-        <p>Evenemang</p>
-        <p>Boktips</p>
-        <p>Hitta hit</p>
-    </section>
-</footer>
