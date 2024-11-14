@@ -55,6 +55,10 @@ p {
     color:#FCFBF4;
 }
 
+.weekly-book img {
+    width:100%;
+    border-radius: 10px;
+}
 
 /* Kalender */
 .kalender-1{
